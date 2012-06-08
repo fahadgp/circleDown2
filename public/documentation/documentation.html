@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>openCanvas |Documentation</title>
+      <link rel="stylesheet" type="text/css" href="highlight.css" media="all">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="highlight.js"></script>
+
+       <style type="text/css">
+	   *{font-family: Segoe UI, Lucida Grande, Arial, sans-serif;line-height:20px;}
+	   #wrapper{width:950px;margin:0 auto;}
+	
+	  
+	
+	 </style>
+      
+    </head>
+    
+    <body>
+
+ <div id="wrapper">      
+<h1 style="margin-top:10px;" >circleDown Documentation</h1>
+<div style="margin:5px 100px;">
+<p style="line-height:15px;">Thank you for buying circleDown,
+</br>For any questions,you can contact me at fahadgp@hotmail.com</p>
+</div>
+
+<h3 style="padding:2px;">SETUP</h3>
+<ul>
+<li> Open <strong>index.html</strong> and change the information to your prefrence(more information on this below).</li>
+<li> To set the timer and change other settings,open <strong>control.js</strong>. Set the timer by changing the 'date' value.</br>
+The value is to be given in the format:<strong> 'date month year hour:miniute:second timezone'.</strong></br>
+<h5 style="padding-left:300px;">EXAMPLE</h5>
+<pre class="brush: js;" >
+ $('#CircleDown').circleDown({
+   date: '12 May 2012 12:48:00 +0530'
+   });
+</pre>
+</li>
+<li>To set the subscription form and contact form,change the values inside <strong/>suscribe.php</strong> and <strong>contact.php</strong> (located in the includes folder) as specified inside the files.</li>
+<li><strong>Upload</strong> the file to a php server.</li>
+</ul>
+<div style="padding=20px; padding-top:5px;">
+<h3 style="padding:2px;">Files and Folders</h3>
+<ul>
+<li><strong>index.html</strong>: The file contains all the markup of the theme. It uses a slider(plugin) to display the information,slides are devided into list items,the list items contain an image with the class="aimg" which is set as the background image and other information belonging to the slide.</li>
+<li><strong>controls.js</strong>: The file has controls to set the timer and the slider.</li>
+<li><strong>styles.css</strong>: Contains all the styling information of index.html.</li>
+<li><strong>includes/contact.php</strong> The php to mail data entered in the contact form to your email ID.</li>
+<li><strong>includes/suscribe.php</strong> The php to mail the suscriber's email adress from the suscribe form to your email ID.</li>
+<li><strong>plugin/jQuery.js</strong> A javascript library that has useful functions that decrease file size and increases cross browser compatibility.</li>
+<li><strong>plugin/circleDown.js</strong> The script of the countdown plugin</li>
+<li><strong>plugin/circleDown.css</strong> The styling of the countdown plugin</li>
+<li><strong>plugin/openCanvas-packed.js</strong>The script of the the slider.</li>
+</ul>
+</div>
+</div>
+    </body>
+</html>
